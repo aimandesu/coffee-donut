@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "32337978437",
+    "project_id": "thor-coffee-donut",
+    "storage_bucket": "thor-coffee-donut.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32337978437:android:4adfa8e7d21b99692cef2c",
+        "android_client_info": {
+          "package_name": "com.example.thor_coffee_donut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32337978437-m4les0pl4s6ovslkg9ucntv60fifp9vi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8eHMuNJEgMJg6Sty1-pNj2EYKTaBMGQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32337978437-m4les0pl4s6ovslkg9ucntv60fifp9vi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -17,13 +17,22 @@ class FoodDrinkProvider with ChangeNotifier {
         .then((value) => value.docs.map((e) => e.data()).toList());
   }
 
-  Future<void> addItem(String order, double price) async {
+  Future<void> addItem(
+    String order,
+    double price,
+    String image,
+  ) async {
     final addItem = FirebaseFirestore.instance.collection("order");
     addItem.add({
       'name': order,
       'price': price,
+      'total': price,
+      'image': image,
       'paid': false,
+      'count': 1,
       'username': FirebaseAuth.instance.currentUser!.uid
-    });
+    }).then((value) => addItem.doc(value.id).update({
+          'orderID': value.id,
+        }));
   }
 }

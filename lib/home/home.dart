@@ -24,11 +24,14 @@ class _HomeState extends State<Home> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
+        const Padding(
           padding: EdgeInsets.all(10),
           child: Text(
-            "SHOP NAME",
-            style: TextStyle(fontSize: 30),
+            "Thor Coffee & Donut",
+            style: TextStyle(
+              fontSize: 30,
+              fontStyle: FontStyle.italic,
+            ),
           ),
         ),
         Row(
@@ -46,11 +49,21 @@ class _HomeState extends State<Home> {
                   // ),
                   TextButton(
                     onPressed: () => changePreference(false),
-                    child: Text("Coffee"),
+                    child: const Text(
+                      "Coffee",
+                      style: TextStyle(
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
                   ),
                   TextButton(
                     onPressed: () => changePreference(true),
-                    child: Text("Donut"),
+                    child: const Text(
+                      "Donut",
+                      style: TextStyle(
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -59,12 +72,12 @@ class _HomeState extends State<Home> {
                 ? SizedBox(
                     height: size.height * 0.68,
                     width: size.width * 0.8,
-                    child: Coffee(),
+                    child: const Coffee(),
                   )
                 : SizedBox(
                     height: size.height * 0.68,
                     width: size.width * 0.8,
-                    child: Donut(),
+                    child: const Donut(),
                   )
 
             // Container(

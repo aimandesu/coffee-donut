@@ -27,15 +27,15 @@ class _MainLayoutControllerState extends State<MainLayoutController> {
     _pages = [
       {
         'page': const Home(),
-        'title': 'Utama',
+        'title': 'Home',
       },
       {
         'page': const Cart(),
-        'title': 'Utama',
+        'title': 'Cart',
       },
       {
         'page': const Profile(),
-        'title': 'Utama',
+        'title': 'Profile',
       },
     ].toList();
     super.initState();
@@ -84,40 +84,44 @@ class _MainLayoutControllerState extends State<MainLayoutController> {
           items: [
             BottomNavigationBarItem(
               icon: const Icon(Icons.home),
-              label: 'Utama',
+              label: 'Home',
               activeIcon: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: const Icon(
                   Icons.home,
-                  size: 40,
+                  size: 30,
                 ),
               ),
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.menu_book_rounded),
-              label: 'Panduan',
+              icon: const Icon(
+                Icons.shopping_bag,
+              ),
+              label: 'Cart',
               activeIcon: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: const Icon(
-                  Icons.menu_book_rounded,
-                  size: 40,
+                  Icons.shopping_bag,
+                  size: 30,
                 ),
               ),
             ),
             BottomNavigationBarItem(
-              icon: const Icon(Icons.camera_alt_rounded),
-              label: 'Gambar',
+              icon: const Icon(
+                Icons.face,
+              ),
+              label: 'Profile',
               activeIcon: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: const Icon(
-                  Icons.camera_alt_rounded,
-                  size: 40,
+                  Icons.face,
+                  size: 30,
                 ),
               ),
             ),

@@ -9,6 +9,7 @@ import 'package:thor_coffee_donut/main_layout_controller.dart';
 import 'package:thor_coffee_donut/providers/cart_provider.dart';
 import 'package:thor_coffee_donut/providers/food_drink_provider.dart';
 import 'package:thor_coffee_donut/providers/login_sign_provider.dart';
+import 'package:thor_coffee_donut/thank_you/thank_you.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
@@ -47,7 +48,10 @@ class MyApp extends StatelessWidget {
           },
         ),
         routes: {
-          DetailsFoodDrink.routeName: (context) => const DetailsFoodDrink()
+          DetailsFoodDrink.routeName: (context) => const DetailsFoodDrink(),
+          ThankYou.routeName: (context) => const ThankYou(),
+          MainLayoutController.routeName: (context) =>
+              const MainLayoutController(),
         },
       ),
     );

@@ -59,7 +59,7 @@ class Coffee extends StatelessWidget {
                           alignment: Alignment.topRight,
                           child: Text(
                             snapshot.data![index]['type'],
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 15,
                               fontStyle: FontStyle.italic,
                             ),
@@ -73,7 +73,7 @@ class Coffee extends StatelessWidget {
                               snapshot.data![index]['image'].toString())),
                       Text(
                         snapshot.data![index]['drink_name'],
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 16,
                           fontStyle: FontStyle.italic,
                         ),
@@ -86,7 +86,7 @@ class Coffee extends StatelessWidget {
                             width: 50,
                             child: Text(
                               "RM${snapshot.data![index]['price']}",
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 17,
                                 fontStyle: FontStyle.italic,
                                 // fontWeight: FontWeight.bold,

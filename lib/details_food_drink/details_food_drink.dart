@@ -24,7 +24,7 @@ class DetailsFoodDrink extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             height: size.height * 0.5,
             width: size.width * 1,
             child: ClipRRect(

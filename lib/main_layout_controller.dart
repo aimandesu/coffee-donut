@@ -5,6 +5,7 @@ import 'cart/cart.dart';
 import 'home/home.dart';
 
 class MainLayoutController extends StatefulWidget {
+  static const routeName = "/main-layout-controller";
   const MainLayoutController({super.key});
 
   @override

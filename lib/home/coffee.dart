@@ -115,7 +115,7 @@ class Coffee extends StatelessWidget {
                                 timeInSecForIosWeb:
                                     1, // duration of the toast on iOS and web
                                 backgroundColor: Colors
-                                    .black45, // background color of the toast
+                                    .black, // background color of the toast
                                 textColor:
                                     Colors.white, // text color of the toast
                                 fontSize:

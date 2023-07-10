@@ -45,9 +45,9 @@ class _LoginSignState extends State<LoginSign> {
                 height: (mediaQuery.size.height - paddingTop) * 0.1,
                 child: const Center(
                   child: Text(
-                    "DER TIEFBAU",
+                    "Thor Coffee and Donut",
                     style: TextStyle(
-                      color: Colors.deepPurple,
+                      color: Colors.brown,
                       fontWeight: FontWeight.bold,
                       fontStyle: FontStyle.italic,
                       fontSize: 30,
@@ -58,7 +58,7 @@ class _LoginSignState extends State<LoginSign> {
               SizedBox(
                 height: (mediaQuery.size.height - paddingTop) * 0.3,
                 child: Lottie.network(
-                    "https://assets7.lottiefiles.com/packages/lf20_mf5j5kua.json"),
+                    "https://assets9.lottiefiles.com/packages/lf20_nwBuryPjwH.json"),
               ),
               SizedBox(
                 // height: (mediaQuery.size.height - paddingTop) * 0.5,
@@ -160,12 +160,12 @@ class SignButtonWidget extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 30, left: 15, right: 15),
       decoration: BoxDecoration(
         border: Border.all(
-          color: Colors.purple,
+          color: Colors.brown,
         ),
         borderRadius: const BorderRadius.all(
           Radius.circular(25),
         ),
-        color: Colors.deepPurple,
+        color: Colors.brown,
       ),
       child: TextButton(
         onPressed: () {
@@ -207,12 +207,12 @@ class LoginButtonWidget extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 30, left: 15, right: 15),
       decoration: BoxDecoration(
         border: Border.all(
-          color: Colors.purple,
+          color: Colors.brown,
         ),
         borderRadius: const BorderRadius.all(
           Radius.circular(25),
         ),
-        color: Colors.deepPurple,
+        color: Colors.brown,
       ),
       child: TextButton(
         onPressed: () {
@@ -260,7 +260,7 @@ class _PasswordWidgetState extends State<PasswordWidget> {
       // width: mediaQuery.size.width * 1,
       decoration: BoxDecoration(
         border: Border.all(
-          color: Colors.purple,
+          color: Colors.brown,
         ),
         borderRadius: const BorderRadius.all(
           Radius.circular(25),
@@ -312,7 +312,7 @@ class UsernameWidget extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         border: Border.all(
-          color: Colors.purple,
+          color: Colors.brown,
         ),
         borderRadius: const BorderRadius.all(
           Radius.circular(25),
@@ -344,7 +344,7 @@ class EmailWidget extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         border: Border.all(
-          color: Colors.purple,
+          color: Colors.brown,
         ),
         borderRadius: const BorderRadius.all(
           Radius.circular(25),

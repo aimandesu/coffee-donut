@@ -9,6 +9,7 @@ import 'package:thor_coffee_donut/main_layout_controller.dart';
 import 'package:thor_coffee_donut/providers/cart_provider.dart';
 import 'package:thor_coffee_donut/providers/food_drink_provider.dart';
 import 'package:thor_coffee_donut/providers/login_sign_provider.dart';
+import 'package:thor_coffee_donut/search/search.dart';
 import 'package:thor_coffee_donut/thank_you/thank_you.dart';
 import 'firebase_options.dart';
 
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
           ThankYou.routeName: (context) => const ThankYou(),
           MainLayoutController.routeName: (context) =>
               const MainLayoutController(),
+          Search.routeName: (context) => const Search(),
         },
       ),
     );

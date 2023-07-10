@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thor_coffee_donut/home/coffee.dart';
 import 'package:thor_coffee_donut/home/donut.dart';
+import 'package:thor_coffee_donut/search/search.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -24,14 +25,29 @@ class _HomeState extends State<Home> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Padding(
-          padding: EdgeInsets.all(10),
-          child: Text(
-            "Thor Coffee & Donut",
-            style: TextStyle(
-              fontSize: 30,
-              fontStyle: FontStyle.italic,
-            ),
+        SizedBox(
+          width: size.width * 1,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Padding(
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  "Thor Coffee & Donut",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
+              IconButton(
+                onPressed: () =>
+                    Navigator.of(context).pushNamed(Search.routeName),
+                icon: const Icon(
+                  Icons.search,
+                ),
+              )
+            ],
           ),
         ),
         Row(

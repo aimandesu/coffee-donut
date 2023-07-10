@@ -113,7 +113,7 @@ class _MainLayoutControllerState extends State<MainLayoutController> {
             ),
             BottomNavigationBarItem(
               icon: const Icon(
-                Icons.face,
+                Icons.account_box,
               ),
               label: 'Profile',
               activeIcon: Container(
@@ -121,7 +121,7 @@ class _MainLayoutControllerState extends State<MainLayoutController> {
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: const Icon(
-                  Icons.face,
+                  Icons.account_box,
                   size: 30,
                 ),
               ),

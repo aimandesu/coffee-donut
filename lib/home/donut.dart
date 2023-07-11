@@ -56,22 +56,42 @@ class Donut extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(right: 15),
                         child: Align(
-                            alignment: Alignment.topRight,
-                            child: Text("Donut")),
+                          alignment: Alignment.topRight,
+                          child: Text(
+                            "Donut",
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                        ),
                       ),
                       Image(
                           width: 100,
                           height: 100,
                           image: NetworkImage(
                               snapshot.data![index]['image'].toString())),
-                      Text(snapshot.data![index]['food_name']),
+                      Text(
+                        snapshot.data![index]['food_name'],
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             margin: const EdgeInsets.all(5),
-                            width: 50,
-                            child: Text("RM${snapshot.data![index]['price']}"),
+                            width: 70,
+                            child: Text(
+                              "RM${snapshot.data![index]['price']}",
+                              style: const TextStyle(
+                                fontSize: 17,
+                                fontStyle: FontStyle.italic,
+                                // fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                           IconButton(
                             onPressed: () {

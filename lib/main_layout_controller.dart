@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:thor_coffee_donut/profile/profile.dart';
 
@@ -45,11 +46,13 @@ class _MainLayoutControllerState extends State<MainLayoutController> {
   @override
   Widget build(BuildContext context) {
     List<Widget> appBarActionWidget() {
-      if (_pages[_selectedPageIndex]['title'].toString() == "Profil") {
+      if (_pages[_selectedPageIndex]['title'].toString() == "Profile") {
         return [
           IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.menu),
+            onPressed: () {
+              FirebaseAuth.instance.signOut();
+            },
+            icon: const Icon(Icons.logout),
           ),
         ];
       } else {

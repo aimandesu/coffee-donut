@@ -64,4 +64,9 @@ class CartProvider with ChangeNotifier {
     }
     return price;
   }
+
+  Future<void> deleteOrder(String orderID) async {
+    final item = FirebaseFirestore.instance.collection("order").doc(orderID);
+    await item.delete();
+  }
 }

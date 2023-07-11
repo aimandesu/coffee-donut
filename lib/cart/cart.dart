@@ -169,7 +169,15 @@ class Cart extends StatelessWidget {
                                                     ['total']
                                                 .toString()),
                                           ),
-                                      icon: const Icon(Icons.remove))
+                                      icon: const Icon(Icons.remove)),
+                                  IconButton(
+                                      onPressed: () {
+                                        Provider.of<CartProvider>(context,
+                                                listen: false)
+                                            .deleteOrder(snapshot.data![index]
+                                                ['orderID']);
+                                      },
+                                      icon: Icon(Icons.delete)),
                                 ],
                               )
                             ],

@@ -83,7 +83,7 @@ class Coffee extends StatelessWidget {
                         children: [
                           Container(
                             margin: const EdgeInsets.all(5),
-                            width: 50,
+                            width: 70,
                             child: Text(
                               "RM${snapshot.data![index]['price']}",
                               style: const TextStyle(
